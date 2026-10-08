@@ -1,67 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>App del Clima - API</title>
-
+    <title>App del Clima</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
-<body>  
-
-    <header>
-
-        <img src="banner.png" alt="Banner del clima" style="width: 350px; height: auto;">
+<body>
+    <div class="contenedor">
+        <!-- 🖼️ RETO 1: Banner centrado y tamaño mediano -->
+        <div class="banner">
+            <img src="banner.png" alt="App del Clima">
+        </div>
 
         <h1>☀️ App del Clima</h1>
+        <p class="subtitulo">Consulta el clima en tiempo real de cualquier ciudad</p>
+        
+        <div class="buscador">
+            <input type="text" id="ciudad" placeholder="Escribe una ciudad...">
+            <button onclick="consultarClima()">Consultar</button>
+        </div>
 
-        <p>Consulta el clima en tiempo real de cualquier ciudad</p>
+        <div id="resultado" class="resultado">
+            <p class="mensaje">Escribe una ciudad y presiona "Consultar"</p>
+        </div>
 
-    </header>
-
-<div class="botones-retos">
-    <button id="btn-ubicacion" class="btn-reto">📍 Mi Ubicación</button>
-    <button id="btn-tema" class="btn-reto">🌙 / ☀️ Tema</button>
-</div>
-
-<div id="historial" class="historial"></div>
-
-    <main>
-
-        <form id="formulario" class="buscador">
-
-            <input
-                type="text"
-                id="inputCiudad"
-                placeholder="Escribe una ciudad..."
-                required
-            >
-
-            <button type="submit">
-                🔍 Consultar
-            </button>
-
-        </form>
-
-        <div id="resultado" class="resultado"></div>
-
-        <p id="estado"></p>
-
-    </main>
-
-    <footer>
-
-        <p>© 2026 - App del Clima | Datos de OpenWeatherMap</p>
-
-        <p>Banner diseñado en Canva ☁️</p>
-
-    </footer>
+        <p class="actualizado">✅ Datos actualizados correctamente.</p>
+        
+        <footer>
+            © 2026 · App del Clima | Datos de OpenWeatherMap
+        </footer>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
