@@ -19,18 +19,38 @@ body {
 
 /* 🖼️ Banner tamaño mediano y centrado */
 .banner {
-    width: 50%;
     margin-bottom: 20px;
     text-align: center;
 }
 .banner img {
-    width: 380px;       /* ← Tamaño perfecto, más pequeña */
-    max-width: 90%;     /* ← No se pasa de la pantalla en celulares */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;     /* ← La mantiene centrada */
+    width: 380px !important;
+    max-width: 90% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
+
+input {
+    padding: 12px 20px;
+    width: 320px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #1e5799;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 
 h1 {
     color: #ffffff;
