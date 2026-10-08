@@ -19,7 +19,7 @@ body {
 
 /* 🖼️ Banner tamaño mediano y centrado */
 .banner {
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px;
     text-align: center;
 }
