@@ -23,11 +23,13 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
-
 .banner img {
-    width: 400px;
+    width: 380px;       /* ← Tamaño perfecto, más pequeña */
+    max-width: 90%;     /* ← No se pasa de la pantalla en celulares */
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;     /* ← La mantiene centrada */
 }
 
 h1 {
